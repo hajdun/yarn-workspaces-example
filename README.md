@@ -3,10 +3,10 @@
 This is a simple example of a monorepo project that use new [Yarn Workspaces](https://github.com/thejameskyle/rfcs-1/blob/workspaces/accepted/0000-workspaces.md) feature.
 
 ## Add dependency
-
+in root folder 
 yarn add [dependency] -W
 
-npx yarn@1.19.0 workspace yarn-workspaces-example add  [dependency]
+yarn add [dependency] -WD 
 
 ## Run
 

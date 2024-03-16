@@ -1,17 +1,15 @@
-import 'src/App.css';
-import Button from 'shared/Button/Button';
+import 'src/App.css'
+import Button from 'shared/Button/Button'
 
-const App=()=> {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        APPLE
-      </header>
+      <header className="App-header">APPLE</header>
       <main>
-      <Button/>
-        </main>
+        <Button />
+      </main>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
