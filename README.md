@@ -1,6 +1,9 @@
 # yarn workspaces example
 
 This is a simple example of a monorepo project that use new [Yarn Workspaces](https://github.com/thejameskyle/rfcs-1/blob/workspaces/accepted/0000-workspaces.md) feature.
+The original example is 'github.com:pedronauck/yarn-workspaces-example.git'
+
+First version uses react-app-rewired with yarn workspaces.
 
 ## Add dependency
 in root folder 
@@ -18,25 +21,4 @@ $ cd apple
 $ yarn start
 ```
 
-First, Yarn will hoist dependencies in the project root, after that you can link your packages among then and running without publish. You'll see in the `package.json` of `b` package that depends of `a` package and works great without any `./node_modules` folder inside it.
-
-Workspaces are a great alternative for some monorepo tools and in the near future can be a better solution!
-
-Cheers 🍻
-
-## docker
-
-single folder
-```
-docker build -t frontend -f Dockerfile ../../
-```
-
-```
-docker run --env-file .docker-env -it -p 8080:8080 frontend
-```
-
-## cypress
-
-```
-docker run -it -v $PWD:/cypress/e2e -w /cypress/e2e cypress/included:12.17.0 --config baseUrl=http://localhost:8080
-```
+The BUTTON component on the page comes from the shared folder.
