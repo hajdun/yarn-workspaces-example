@@ -53,7 +53,7 @@ module.exports = {
             }
           ]
     },
-    "ignorePatterns": [".eslintrc.js", "config-overrides.js", "fileMock.js"],
+    "ignorePatterns": [".eslintrc.js", "config-overrides.js", "fileMock.js", "styleMock.js"],
     "settings": {
         react: {
             version: "detect"

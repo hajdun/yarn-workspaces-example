@@ -8,11 +8,11 @@ const config: Config.InitialOptions = {
     '\\.[jt]sx$': 'ts-jest'
   },
   testEnvironment: 'jest-environment-jsdom',
-  moduleDirectories: ['node_modules', '<rootdir>'],
+  moduleDirectories: ['node_modules', '<rootdir>', 'src'],
   moduleNameMapper: {
-    '\\.(jpg|ico|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$': '_mocks_/fileMock.js',
-    '\\.[s]css$': 'identity-obj-proxy',
-    '^shared/(.*)$': '<rootDir>/src/$1'
+    "src/(.*)": "<rootDir>/src/$1",
+    '\\.(jpg|ico|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$': '_mocks/fileMock.js',
+    '\\.[s]css$': '_mocks/styleMock.js',
   },
   preset: 'ts-jest'
 }
